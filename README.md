@@ -37,7 +37,7 @@ Funcionamento
 
 - O cliente envia **SETUP**. Esse comando é usado para ajustar os parâmetros de sessão e de transporte.
 - O cliente envia **PLAY**. Isso inicia a reprodução.
-- O cliente pode enviar **PAUSE** se ele quiser pausar durante a reprodução.
+- O cliente envia **PAUSE** se ele quiser pausar durante a reprodução.
 - O cliente envia **CLOSE**.  Fecha a conexão.
 -  O cliente envia **SESSION**. Isso termina a sessão.
 
