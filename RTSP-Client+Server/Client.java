@@ -575,11 +575,9 @@ public class Client {
             //the RTP packets RTP_RCV_PORT
             if (request_type == "SETUP") {
                 RTSPBufferedWriter.write("Transport: RTP/UDP; client_port= " + RTP_RCV_PORT + CRLF);
-            }
-            else if (request_type == "DESCRIBE") {
+            } else if (request_type == "DESCRIBE") {
                 RTSPBufferedWriter.write("Accept: application/sdp" + CRLF);
-            }
-            else {
+            } else {
                 //otherwise, write the Session line from the RTSPid field
                 RTSPBufferedWriter.write("Session: " + RTSPid + CRLF);
             }
