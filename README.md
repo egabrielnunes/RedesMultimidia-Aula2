@@ -6,13 +6,13 @@ Arquitetura
 ---
 Este código possui 4 classes, que formam a arquitetura principal do sistema, são elas:
 
- 1. **Client:** Esta classe implementa o cliente e a interface de usuário que você usará para enviar comandos RTSP e que será utilizada para exibir o vídeo. Abaixo vemos como é a interface. Você deverá implementar as ações que são tomadas quando os botões são pressionados.
+ 1. **Client:** Esta classe implementa o cliente e a interface de usuário que é usado para enviar comandos RTSP e que será utilizada para exibir o vídeo. Abaixo vemos como é a interface. 
 
-2. **Server:** Esta classe implementa o servidor que responde às requisições RTSP e encaminha o vídeo de volta. A interação RTSP já está implementada e o servidor chama as rotinas na classe RTPpacket para empacotar os dados de vídeo. Você não precisa mexer nesta classe.
+2. **Server:** Esta classe implementa o servidor que responde às requisições RTSP e encaminha o vídeo de volta. O servidor chama as rotinas na classe RTPpacket para empacotar os dados de vídeo.
 
-3. **RTPpacket:** Esta classe é usada para manipular os pacotes RTP. Ela possui rotinas separadas para tratar os pacotes recebidos no lado cliente que já é dado e você não precisa modificá-lo (mas veja os Exercícios opcionais). Você deverá completar o primeiro construtor desta classe para implementar o empacotamento RTP dos dados de vídeo. O segundo construtor é usado pelo cliente para desempacotar os dados. Você não precisa modificá-lo também.
+3. **RTPpacket:** Esta classe é usada para manipular os pacotes RTP. Ela possui rotinas separadas para tratar os pacotes recebidos no lado cliente. 
 
-4. **VideoStream:**  Esta classe é usada para ler os dados de vídeo do arquivo em disco. Você não precisa modificar esta classe.
+4. **VideoStream:**  Esta classe é usada para ler os dados de vídeo do arquivo em disco. 
 
 Executando o código 
 ----
